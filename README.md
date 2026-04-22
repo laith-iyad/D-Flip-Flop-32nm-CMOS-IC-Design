@@ -13,6 +13,42 @@ This project covers the complete design flow of a D Flip-Flop from schematic to 
 - **Supply Voltage:** 1V (VDD)
 - **Load Capacitance:** 20fF
 
+---
+
+## Reference Circuit
+
+Transistor-level topology used as the reference for the design.
+
+![Reference Circuit](images/img_p1_1.png)
+
+---
+
+## Schematic
+
+Full transistor-level schematic of the D Flip-Flop designed in Electric VLSI, with inputs Clk, D and outputs Q, QB.
+
+![Schematic](images/img_p1_2.png)
+
+---
+
+## Physical Layout
+
+VLSI layout of the flip-flop in 32nm CMOS, showing metal layers, active regions, polysilicon, and contacts.
+
+![Layout](images/img_p2_1.jpeg)
+
+---
+
+## SPICE Simulation Results
+
+Transient simulation showing the clock (green), D input (blue), and Q output (red) over 200ns.
+
+![Simulation Waveform 1](images/img_p2_2.png)
+
+![Simulation Waveform 2](images/img_p2_3.png)
+
+---
+
 ## Cells / Modules
 
 | Cell | Views |
@@ -25,7 +61,9 @@ This project covers the complete design flow of a D Flip-Flop from schematic to 
 | `week_keeper` | Schematic, Icon |
 | `structure` | Layout |
 
-## Simulation
+---
+
+## Simulation Setup
 
 SPICE transient simulation with the following measurements:
 
@@ -40,6 +78,8 @@ SPICE transient simulation with the following measurements:
 |--------|------|--------|
 | Clk | PULSE (0→1) | 50ns |
 | D | PULSE (0→1) | 100ns |
+
+---
 
 ## Files
 
